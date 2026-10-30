@@ -10,7 +10,7 @@ package model;
         
       // construtor //
       
-    public conta (double poupar , double pagarDespesa , double sacar , double depositar ){
+    public Conta (double poupar , double pagarDespesa , double sacar , double depositar ){
          
         this.depositar = depositar;
         this.sacar = sacar;
@@ -33,35 +33,35 @@ package model;
       // getters setters //
       
     public double getDepositar (){
-        return this.Depositar;
+        return this.depositar;
     }
     
     public void setDepositar (double Depositar){
-        this.Depositar = Depositar;
+        this.depositar = depositar;
     }
     
     public double getSacar (){
-        return this.Sacar;
+        return this.sacar;
     }
     
     public void setSacar (double Sacar){
-        this.Sacar = Sacar;
+        this.sacar = sacar;
     }
     
     public double getPagarDespesa (){
-        return this.PagarDespesa;
+        return this.pagardespesa;
     }
     
     public void setPagarDespesa (double PegarDespesa){
-        this.PagarDespesa = PagarDespesa;
+        this.pagardespesa = pagardespesa;
     }
     
     public double getPoupar (){
-        return this.Poupar;
+        return this.poupar;
     }
     
     public void setPoupar (double Poupar){
-        this.Poupar = Poupar;
+        this.poupar = poupar;
     }
 }
     
