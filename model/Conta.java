@@ -1,54 +1,67 @@
-package modelo;
-
-public class Conta {
-    
-    private int numero;
-    private String cliente;
-    private double saldo;
-    private double limite;
-
-    //CONSTRUTOR
-
-   public Conta (int numero, String cliente, double saldo, double limite) {
-        this.numero = numero;
-        this.cliente = cliente;
-        this.saldo = saldo;
-        this.limite = limite;
-    }
-
-    //GETTERS E SETTERS
+package model;
+ // atributos //
  
-    public int getNumero() {
-        return this.numero;
+    public class Conta {
+        
+        private double poupar;
+        private double pagarDespesa;
+        private double sacar;
+        private double depositar;
+        
+      // construtor //
+      
+    public conta (double poupar , double pagarDespesa , double sacar , double depositar ){
+         
+        this.depositar = depositar;
+        this.sacar = sacar;
+        this.pagarDespesa = pagarDespesa;
+        this.poupar = poupar;
+         
+     } 
+       
+        // getter and setters //
+        
+    public String getConta (){
+        return this.conta;
+        
     }
     
-    public void setNumero(int Numero) {
-        this.numero = numero;
+    public void setConta (String conta ){
+        this.conta = conta;
     }
     
-    public String getCliente() {
-        return this.cliente;
+      // getters setters //
+      
+    public double getDepositar (){
+        return this.Depositar;
     }
     
-    public void setCliente(String Cliente) {
-        this.cliente = cliente;
+    public void setDepositar (double Depositar){
+        this.Depositar = Depositar;
     }
     
-    public double getSaldo() {
-        return this.saldo;
+    public double getSacar (){
+        return this.Sacar;
     }
     
-    public void setSaldo(double newSaldo) {
-        this.saldo = newSaldo;
+    public void setSacar (double Sacar){
+        this.Sacar = Sacar;
     }
     
-    public double getLimite() {
-        return this.limite;
+    public double getPagarDespesa (){
+        return this.PagarDespesa;
     }
     
-    public void setLimite(String Limite) {
-        this.limite = limite;
+    public void setPagarDespesa (double PegarDespesa){
+        this.PagarDespesa = PagarDespesa;
     }
-
+    
+    public double getPoupar (){
+        return this.Poupar;
+    }
+    
+    public void setPoupar (double Poupar){
+        this.Poupar = Poupar;
+    }
 }
     
